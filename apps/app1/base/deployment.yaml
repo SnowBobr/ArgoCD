@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: app1
 spec:
-  replicas: 1
+  replicas: 1   # это можно переопределять в overlay
   selector:
     matchLabels:
       app: app1
@@ -20,6 +20,7 @@ spec:
           volumeMounts:
             - name: html
               mountPath: /usr/share/nginx/html
+              readOnly: true
       volumes:
         - name: html
           configMap:

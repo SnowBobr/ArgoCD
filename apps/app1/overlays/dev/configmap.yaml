@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: app1-html
+  namespace: dev
 data:
   index.html: |
     <?php
