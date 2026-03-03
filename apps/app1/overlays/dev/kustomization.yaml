@@ -3,11 +3,5 @@ resources:
 
 namePrefix: dev-
 
-patches:
-  - target:
-      kind: Deployment
-      name: app1
-    patch: |
-      - op: replace
-        path: /spec/replicas
-        value: 1
+patchesStrategicMerge:
+  - deployment-patch.yaml
