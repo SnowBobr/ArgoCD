@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: snowbobr/my-website:67c44401b9bacabca9f87bf58f659c13a7a471a6
+          image: snowbobr/my-website:ee869b9562b07a0a80d8af2a4fa83fe326ce74bf
           ports:
             - containerPort: 80
